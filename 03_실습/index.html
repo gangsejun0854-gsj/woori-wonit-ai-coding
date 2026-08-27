@@ -1,0 +1,37 @@
+<!-- 계좌번호, 잔액, 상태가 보이는 은행 계좌 카드 한 장 -->
+<style>
+	.account-card {
+		width: min(100% - 32px, 420px);
+		margin: 24px auto;
+		padding: 24px;
+		box-sizing: border-box;
+		background: #fff;
+		border-radius: 16px;
+		box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+		color: #333;
+	}
+
+	.account-card h3 {
+		margin: 0 0 16px;
+		color: #222;
+	}
+
+	.account-card p {
+		margin: 10px 0;
+		line-height: 1.5;
+	}
+
+	@media (max-width: 480px) {
+		.account-card {
+			margin: 16px auto;
+			padding: 20px;
+			border-radius: 12px;
+		}
+	}
+</style>
+<div class="account-card">
+	<h3>계좌 정보</h3>
+	<p>계좌번호: 1002-345-678901</p>
+	<p>잔액: 1,523,000원</p>
+	<p>상태: 정상</p>
+</div>
