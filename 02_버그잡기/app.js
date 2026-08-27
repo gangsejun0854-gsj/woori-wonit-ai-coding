@@ -75,7 +75,7 @@ function renderTransactionList() {
 }
 
 function renderBalance() {
-  const balanceEl = document.getElementById("blance");
+  const balanceEl = document.getElementById("balance");
   balanceEl.textContent = formatCurrency(ACCOUNTS[0].balance);
 }
 
@@ -83,6 +83,7 @@ function renderBalance() {
 
 function handleDeposit() {
   ACCOUNTS[0].balance += 10000;
+  renderBalance();
   alert("10,000원이 입금되었습니다.");
 }
 
@@ -137,6 +138,6 @@ renderCategorySummary();
 renderTransactionList();
 
 const depositBtn = document.querySelector("#depositBtn");
-depositBtn.addEventListener("click", handleDeposit());
+depositBtn.addEventListener("click", handleDeposit);
 
 renderBalance();

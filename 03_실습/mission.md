@@ -53,3 +53,28 @@ playwright.config.js
 
 # !는 not 을 의미합니다.
 !package.json"
+"# .gitignore는 git에 올리고 싶지 않은 파일을 적는 목록입니다.
+# 파일은 확장자까지 적어줍니다. 
+# 폴더는 폴더명 뒤에 /를 붙여서 적습니다.
+# 예시)
+
+# 테스트와 관련된 폴더 (아직 동작하지 않음)
+node_modules/
+playwright-report/
+test-results/
+tests/
+
+playwright.config.js
+
+# 기능이나 목적별로 엔터로 구분해서 적어둡니다.
+
+
+# 명령어로 받는 패키지, 아직 완성되지 않은 파일, 
+# 아이디나 비밀번호, API 키 등 민감정보 파일들을 적습니다.
+
+# *은 모든 이라는 뜻입니다.
+*.json
+눈에보임*
+
+# !는 not 을 의미합니다.
+!package.json"
